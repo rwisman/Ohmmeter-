@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'EquationEditor' target in the 'EquationEditor' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

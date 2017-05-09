@@ -1,0 +1,486 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Raymond F. Wisman">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link REL="stylesheet" href="basic.css" type="text/css">
+<link rel="icon" 
+      type="image/ico" 
+      href="favicon.ico"/>
+<title>Ohmmeter+</title>
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" link="#0000FF" vlink="#551A8B" 
+alink="#FF0000">
+
+	<p><font size="5"><b>Mobile Science</b></font></p>
+	<table border="0" cellpadding="10" cellspacing="0">
+		<tr>
+			<td><font size="5">
+			<a href="https://itunes.apple.com/us/app/ohmmeter+/id685431874?mt=8">
+			<img border="0" src="72x72.png" align="left" hspace="0" style="border: 8px solid #FFFFFF; background-color: #FFFFFF"></a><b><br>Ohmmeter<sup>+</sup></b></font> 
+	by Ray Wisman and Kyle Forinash<br>Indiana University SE. 
+
+				<blockquote>
+					<h2><span style="font-size: 16pt">Description</span></h2>
+					<p><i>Ohmmeter<font size="5"><sup>+</sup></font></i> 
+					measures resistance,<font size="5"> &#937;</font>, of a simple 
+					circuit connected through the headset port and converts to 
+					another unit by a user defined function, f(<font size="5">&#937;</font>). </p>
+					<p>For example, <font size="5">&#937;</font> can be 
+					converted to Celsius by the <i>Steinhart-Hart</i> equation for a 
+					10K thermistor: </p>
+					<blockquote>
+						<p>0.001125308852122+0.000234711863267*ln(<font size="5">&#937;</font>)+0.000000085663516*ln(<font size="5">&#937;</font>)^3)^-1-273.15
+						</p>
+					</blockquote>
+					<p>The application is useful for measuring resistance and 
+					other units that change over time.</p>
+					<p>The application displays, records, graphs and emails 
+					spreadsheet data of simultaneous <font size="5">&#937;</font> 
+					and f(<font size="5">&#937;</font>) measurements.</p>
+					<p>Up to two days of measurements can be recorded at rates 
+					of 10 samples per second. </p>
+			</blockquote></td>
+		</tr>
+	</table>
+
+	<blockquote>
+	<p><b>Views</b> </p>
+	<table border="0" cellspacing="0">
+		<tr>
+			<td>
+	<img border="0" src="Default.PNG" style="border-style: groove; border-width: 1px" hspace="30" width="320" height="480"><br>
+&nbsp;</td>
+			<td><b>Controls and Displays</b><blockquote>
+				<p><b><font size="5">&#937;</font></b> the current measured 
+				resistance. Color indicates the predicted accuracy based on dB 
+				value.</p>
+				<blockquote>
+					<table border="0" cellpadding="10" cellspacing="0">
+						<tr>
+							<td align="center" bgcolor="#3399FF">
+							<font color="#FFFFFF"><b>Good</b></font></td>
+							<td align="center" bgcolor="#3399FF">
+							<font color="#FFFF00"><b>Poor</b></font></td>
+							<td align="center" bgcolor="#3399FF">
+							<font color="#FF0000"><b>Bad</b></font></td>
+						</tr>
+						</table>
+				</blockquote>
+				<p>
+				<b>f(<font size="5">&#937;</font>) </b>the current converted 
+				resistance. Color indicates the predicted accuracy based on dB 
+				value.</p>
+				<p>
+				<b>Calibrate</b> to a known resistance
+				<img border="0" src="Calibrate.PNG" align="middle">.</p>
+				<p><b>Save</b> the calibration setting, automatically 
+				reloaded at app startup.</p>
+				<p><b>Record/Stop</b> to record/stop recording resistance. The 
+				recorded resistance values are plotted and can be emailed in a 
+				spreadsheet readable format (CSV).</p>
+				<p><b>Email</b><i> </i>the recorded measurements.</p>
+				<p><b>Time </b>in seconds since <i>Start</i> button pressed. 
+				Controls vary display, plot and recorded data update rate
+				<img border="0" src="photo6.PNG" align="middle" width="118" height="64">.</p>
+				<p><b>dB </b>is the current measured circuit output value which is translated 
+				to resistance.</p>
+				<p><b>Volume</b> controls the volume which changes dB.</p>
+			</blockquote>
+			</td>
+		</tr>
+		<tr>
+			<td>
+		<img border="0" src="photo2.PNG" align="center" style="border-style: groove; border-width: 1px" hspace="30"></td>
+			<td><b>Plot</b><blockquote>
+				<p><i>Resistance</i>,<font size="5"> &#937;</font>, and f(<font size="5">&#937;</font>) 
+				are the vertical axis of the graph, scaled to fit the maximum and minimum value 
+				over the time to be displayed.
+				<p>Check either <font size="5">&#937;</font> or f(<font size="5">&#937;</font>) 
+				to display.<p><i>Time</i> is displayed horizontally.<p>Sliders set the <i>Start 
+				</i>and<i> 
+	End</i> of the time interval displayed.<p>A maximum of 250 data points 
+	between the <i>Start</i> and <i>End</i> points are graphed to maintain 
+				responsiveness.<p>&nbsp;<p><b>Example</b><blockquote>
+					<p>The graph displays temperature as a thermistor 
+					momentarily touches the surface of hot water.</blockquote></blockquote>
+			<p>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+		<img border="1" src="photo4.png" align="center" hspace="30"><p>&nbsp;</td>
+			<td>
+			<p><b>Equation Editor</b><blockquote>
+				<p>Arbitrary equations, f(<font size="5">&#937;</font>), can be 
+				added and stored for later conversions.<p>Equations can be 
+				written in terms of R (upper-case R) representing <font size="5">&#937;</font> 
+				in an equation of one variable, R.<p>Equations can include ( ) 
+				and common functions: 
+				<blockquote>
+					<p>^,*,/,%,-,+<p>
+					sin,cos,tan,log,log2,exp,abs,sqrt,asin,acos,atan,sinh,cosh,tanh,asinh,acosh,atanh,ceil,floor,round,trunc,rint,near,dtor,rtod<p>&nbsp;</blockquote>
+				<p><b>Example:</b> Ohm to Celsius conversion is selected using 
+				the Steinhart-Hart equation for 10K thermistors.<blockquote>
+					<p>(0.001125308852122+0.000234711863267*ln(R)+0.000000085663516*ln(R)^3)^-1-273.15<p>&nbsp;</blockquote>
+			</blockquote>
+			<p><b>Preferences</b><blockquote>
+				<p>Email addressee, fine calibration and attachment file name preferences are in 
+				<i>Settings</i>.<br>&nbsp;</blockquote>
+			</td>
+		</tr>
+	</table>
+	<p>
+	&nbsp;</p>
+</blockquote>
+<p><b>Resistance Measurement Circuit</b></p>
+	<blockquote>
+		<table border="0" cellpadding="10" cellspacing="0">
+		<caption>Resistance measurement circuit and Ohmmeter+ app.</caption>
+			<tr>
+				<td>
+		<img border="0" src="photo3.png"></td>
+			</tr>
+		</table>
+		<p>
+		&nbsp;</p>
+		<p>The <i>Ohmmeter<sup>+</sup></i> app with the circuit below connected 
+		through the headset measures the resistance of
+					R<sub>3</sub>.</p>
+		<p>Changing
+					R<sub>3</sub> to a 10K thermistor and selecting the 
+		supplied Steinhart-Hart equation measures temperature in Celsius.</p>
+		<blockquote>
+			<table border="1" cellpadding="10" cellspacing="0"><caption>Circuit 
+				with fixed resistor</caption>
+				<tr>
+					<td>
+					<img border="0" src="circuit.png" width="264" height="156"><p>R<sub>1</sub> = 10k&#937;<br>
+					R<sub>2</sub> = 220&#937;<br>
+					R<sub>3 </sub>= 
+		calibration resistor or object to measure<br>
+					C = 0.1&#956;F</td>
+				</tr>
+			</table>
+		</blockquote>
+		<p>The standard four-pole headset jack with connections:</p>
+		<blockquote>
+			<table border="1" cellpadding="10" cellspacing="0">
+				<tr>
+					<td>tip</td>
+					<td>Left speaker</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Right speaker</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Ground</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Microphone</td>
+				</tr>
+			</table>
+		</blockquote>
+		<p>R<sub>3</sub> can be connected to the circuit by a section of headset 
+		cable.</p>
+	</blockquote>
+	<p>&nbsp;</p>
+	<p><b>Instructions for Use as a Thermometer
+	or Other Measurement Device</b></p>
+	<blockquote>
+		<p>A thermistor-based thermometer can be more sensitive and accurate 
+		than common thermometers, and, using the app, allows automatic 
+		monitoring real-time changes in temperature.</p>
+		<p>Although the<i> Steinhart-Hart</i> equation accurately converts 
+		resistance to temperature for a 10K thermistor, deriving our own 
+		equation illustrates&nbsp; the general principles for creating other 
+		measure devices. </p>
+		<p>The essentials are the same, the difference is whether a thermistor 
+		or some other resistance changing sensor replaces R<sub>3 </sub>in the 
+		circuit.</p>
+		<p>For a 10K thermistor:</p>
+		<ol>
+			<li>Connect the 10K thermistor to an ohmmeter to measure the 
+			thermistor resistance at different temperatures.
+			<p>To use the<i> Ohmmeter<sup>+</sup></i><sub> </sub>app to measure 
+			resistance rather than an ohmmeter:<ol type="a">
+				<li>replace R<sub>3 </sub>in the circuit with the thermistor,</li>
+				<li>calibrate <font size="5">&#937;</font> of the app with an 
+				ohmmeter,</li>
+				<li>take subsequent resistance measures from the app. <br>
+&nbsp;</li>
+			</ol></li>
+			<li>This is the challenging part - recording accurate resistance and 
+			corresponding temperature measures. 
+			<p>Some general advice on measurements:</p>
+			<blockquote>
+				<p>Be aware the thermistor is probably more responsive and 
+				sensitive to temperature changes than common thermometers. 
+				Circulating air, e.g. breathing, can affect measurements.</p>
+				<p>Thermistor and thermometer should be in close proximity to 
+				reduce effects of temperature layers, air currents, etc. </p>
+				<p>The thermistor sensor is small compared to the detection area 
+				of common thermometers. When possible, expose the complete 
+				thermometer to the measured temperature.</p>
+				<p>Air temperature measures are simplest because complete 
+				thermistor and thermometer are exposed.</p>
+				<p>Liquid temperature measures require that only the 
+				non-conductive thermistor parts are exposed to the liquid.</p>
+				<p>Keep the circuit, other than the thermistor, at a constant 
+				temperature for all measurements. </p>
+			</blockquote>
+			<p>Measure multiple temperatures over the range of the thermistor, 
+			common 10K thermistor with a negative temperature coefficient ranges 
+			from 332,094 Ohms (-45 °C) to 182.6 Ohms (150 °C). </p>
+			<p>The circuit above can accurately measure only the central part of 
+			the full thermistor range - see <i>Extending Ohmmeter Measurement Range</i> 
+			below for some ideas on measuring temperatures at the extreme range 
+			of the thermistor. </p>
+			<p>The figure below lists nine data samples with temperature as 
+			measured by a digital cooking thermometer.<br>
+&nbsp;</li>
+			<li>Fit the resistance versus temperature. Excel scatter-plots 
+			include several choices of equations to fit to the data, a 
+			logarithmic equation provides a reasonably good fit.<br>
+			<br>
+			<b><img border="1" src="Data.png" align="right"></b></li>
+			<li>Place the thermistor as
+					R<sub>3 </sub>in the circuit above and connect to the iOS 
+			device headset.<b><br>
+&nbsp;</b></li>
+			<li>
+			<p style="line-height: 150%">Start <font size="5">
+			<img border="0" src="72x72.png" align="texttop" hspace="0" style="border: 0px solid #FFFFFF; background-color: #FFFFFF" width="33" height="32">
+			</font>then <i>Edit</i> tab and <b>+</b> to add the fitted equation. 
+			The Excel equation would be entered with Ohms represented by <b>R</b> 
+			as: -25.56 * ln(<b>R</b>) + 261.68<br>
+&nbsp;</li>
+			<li>
+			<p style="line-height: 150%">Select the equation to use for 
+			converting to Celsius.<br>
+&nbsp;</li>
+			<li>
+			<p style="line-height: 150%">&nbsp;Adjust the<i> Volume</i> control 
+			near -20 dB.<br>
+&nbsp;</li>
+			<li>
+			<p style="line-height: 150%">Calibrate the temperature to a 
+			thermometer by adjusting
+			<img border="0" src="Calibrate.PNG" align="middle"></li>
+		</ol>
+		<table border="0" cellpadding="10" cellspacing="0">
+			<tr>
+				<td align="center">
+		<img border="1" src="photo4.png" align="center" hspace="30"><p align="center">
+				a)<b> +</b> to add the fitted equation</td>
+				<td align="center">
+				<img border="0" src="photo7.png" width="320" height="480"><p>b) 
+				-25.56 * ln(<b>R</b>) + 261.68</td>
+			</tr>
+			<tr>
+				<td align="center">
+				<img border="0" src="photo9.png" width="320" height="480"><p>c) 
+				Select the equation</td>
+				<td align="center">
+				<img border="0" src="photo8.png" width="320" height="480"><p>d) 
+				Adjust the<i> Volume</i> control near -20 dB. </p>
+				<p>Calibrate the temperature to a thermometer by adjusting<br>
+&nbsp;<img border="0" src="Calibrate.PNG" align="middle"></td>
+			</tr>
+		</table>
+	</blockquote>
+	<p><b>Instructions for Use as an Ohmmeter</b></p>
+	<blockquote>
+		<p>1. Construct circuit and connect headset. Eliminate sources of 
+		electrical noise such as motors and the computer USB connection. </p>
+		<p>2. Calibrate using a known R<sub>3 </sub>value. </p>
+		<blockquote>
+			<p>Ideally R<sub>3 </sub>is a good guess as to the resistance to be 
+			measured, at least within an order of magnitude.</p>
+			<p>Adjust volume until signal is approximately -20 dB.</p>
+			<p>R<sub>3 </sub>and R<sub>2 </sub>values are related by: V<sub>out
+			</sub>= R<sub>2</sub>/(R<sub>2 </sub>+ R<sub>3</sub>)V<sub>in</sub></p>
+			<blockquote>
+				<p>which means R<sub>3 </sub>should not be too close and 
+				certainly not less than the R<sub>2 </sub>value.</p>
+				<p>R<sub>3 </sub>= 10*R<sub>2 </sub>is a good rule of thumb.</p>
+				<p>For R<sub>2</sub> = 220&#937;, R<sub>3 </sub>= 1000&#937; gives 300&#937; to 
+				10,000&#937; measurements.</p>
+			</blockquote>
+			<p>With a known R<sub>3 </sub>in the circuit, set volume 
+			to approximately -20 dB, with the dB balance bar
+				<img border="0" src="dB.png" width="170" height="16"> about 50%.</p>
+			<p>Calibrate to R<sub>3 </sub>
+			value using
+				<img border="0" src="Calibrate.PNG" align="middle"> and <i>Save</i> 
+			to retain calibration.</p>
+			<p>Accuracy is constrained by the resistance of R<sub>3</sub>, with 
+			values over 1M&#937; reducing the circuit output signal, V<sub>out</sub>, to undetectable 
+			levels.</p>
+		</blockquote>
+		<p>3. Replace R3 with the unknown resistance to be measured.</p>
+		<blockquote>
+			<p>Generally, the range of accurate measurements is 5R<sub>2</sub> to 
+		50R<sub>2</sub>.</p>
+			<p>Sample R<sub>2</sub>, R<sub>3 </sub>and measurement ranges.</p>
+			<table border="1" cellpadding="10" cellspacing="0">
+				<tr>
+					<td align="center" bgcolor="#C0C0C0">R<sub>2</sub></td>
+					<td align="center" bgcolor="#C0C0C0">R<sub>3</sub></td>
+					<td align="center" bgcolor="#C0C0C0">Range</td>
+				</tr>
+				<tr>
+					<td align="center">10&#937;</td>
+					<td align="center">200&#937;</td>
+					<td align="center">30&#937; to 2000&#937;</td>
+				</tr>
+				<tr>
+					<td align="center">219&#937;</td>
+					<td align="center">9920&#937;</td>
+					<td align="center">1000&#937; to 20000&#937;</td>
+				</tr>
+				<tr>
+					<td align="center">2200&#937;</td>
+					<td align="center">22000&#937;</td>
+					<td align="center">10000&#937; to 100000&#937;</td>
+				</tr>
+			</table>
+		</blockquote>
+		<p>4. Edit and select a conversion equation defined in terms of 
+		resistance, f(<font size="5">&#937;</font>).</p>
+		<p>5. Calibrate f(<font size="5">&#937;</font>) results. For example, if 
+		converting to Celsius, calibrate the app conversion results with a known 
+		temperature using
+				<img border="0" src="Calibrate.PNG" align="middle"> and <i>Save</i> 
+			to retain calibration. </p>
+		<p>&nbsp;</p>
+	</blockquote>
+	<p><b>Extending Ohmmeter Measurement Range</b></p>
+	<blockquote>
+		<p>The range of measurements can, in theory, be extended by calibrating 
+		with known R<sub>3</sub> and R<sub>4</sub> in parallel.<br>
+		<br>
+		Then measure R<sub>unknown</sub> in parallel with R<sub>4</sub>, using 
+		the relations:</p>
+		<blockquote>
+			<p>R<sub>total</sub> = (R<sub>4</sub>*R<sub>unknown</sub>)/(R<sub>4</sub>+R<sub>unknown</sub>)
+			</p>
+			<p>R<sub>unknown </sub>= (R<sub>total</sub>*R<sub>4</sub>)/(R<sub>4</sub>-R<sub>total</sub>) 
+			where R<sub>total </sub>(measured by the app) and R<sub>4</sub> are 
+			known.</p>
+			<table border="1" cellpadding="10" cellspacing="0">
+				<tr>
+					<td>
+					<img border="0" src="parallelcircuit.png" width="264" height="156"><br>
+					Circuit with parallel calibration resistors.</td>
+				</tr>
+			</table>
+			<p><br>
+&nbsp;</p>
+		</blockquote>
+	</blockquote>
+	<p><b>Theory Behind Using the Headset Port</b></p>
+	<blockquote>
+		<p>The headset port can serve to interface to devices that produce 
+		resistance in a voltage divider circuit formed by R<sub>2 </sub>and R<sub>3</sub>. 
+		For example, ambient light levels can be measured by replacing R<sub>3</sub> with a light activated photo resistor. </p>
+		<p>Designed for audio, the headset port filters DC current inputs and 
+		outputs. However, a sine wave with frequency ranging up to 20kHz can be 
+		output by a phone app from the headset port to serve as input to the 
+		circuit. The amplitude of the returning sine wave output is determined 
+		by the resistance of R<sub>3</sub>. Only the amplitude of 
+		the sine wave varies in the circuit, not the frequency. The amplitude of 
+		the circuit output is then measured through the headset microphone as 
+		a decibel (dB) reading by the phone app. To reduce noise due to 
+		sampling errors, a low pass filter is applied in software to the peak decibel 
+		reading of the returning sine wave as measured over a short period of 
+		time.
+		</p>
+		<p>Translation from dB to resistance is based on the empirically derived 
+		equation:</p>
+		<blockquote>
+			<p>resistance = (282.37+calibrationCorrection)*<i>e</i><sup>-0.127*dB</sup></p>
+		</blockquote>
+		<p>where calibrationCorrection is adjusted by the user to match a known calibration 
+		resistance in R<sub>3</sub>.</p>
+		<p>Programmed with the equation and calibrated to a known resistance, 
+		the app can measure resistance. A conversion equation specified in terms 
+		of resistance can then convert to other units. 
+		</p>
+		<p>&nbsp;</p>
+	</blockquote>
+
+	<p><b>References for further examination of Mobile Science</b></p>
+	<blockquote>
+		<p>R. Wisman, K. Forinash; 'Science in Your Pocket', International 
+		Journal on Hands-on Science (IJHSCI) Vol. 1, No. 1, September (2008) 
+		p7-15.</p>
+		<p>K. Forinash, R. Wisman, &#8216;Mobile Science &#8211; Acceleration&#8217;, Apple App 
+		Store; (https://itunes.apple.com/us/app/mobile-science-acceleration/id389821809?mt=8).</p>
+		<p>K. Forinash, R. Wisman, &#8216;Mobile Science &#8211; Temperature&#8217; , Apple App 
+		Store; (http://itunes.apple.com/us/app/mobile-science-temperature/id467423322?mt=8). </p>
+		<p>K. Forinash, R. Wisman, &#8216;Mobile Science &#8211; Temperature&#8217; , Apple App 
+		Store; (https://itunes.apple.com/us/app/ohmmeter/id628027479?mt=8)</p>
+		<p>R. Wisman, K. Forinash; 'Mobile Science', Ubiquitous Learning; An 
+		International Journal, Vol. 3 No. 1 (2011) p21-34.</p>
+		<p>R. Wisman and K. Forinash, &#8216;Smartphones as portable oscilloscopes for 
+		physics labs&#8217;, The Physics Teacher, Vol. 50 No. 4 (2012) p242.</p>
+		<p>K. Forinash and R. Wisman, &#8216;Smartphones - Experiments with an 
+		External Thermistor Circuit&#8217;, The Physics Teacher, Vol. 50 No. 9 (2012) 
+		p566.</p>
+		<p>K. Forinash and R. Wisman, &#8216;Smartphones as Data Collection Tools for 
+		Science Education&#8217;, International Newsletter on Physics Education, Vol. 
+		64 (2013). </p>
+		<p>K. Forinash and R. Wisman, 'Using smartphones as science laboratory 
+		instruments', American Association of Physics Teachers, Portland, July 
+		13-17, 2013 </p>
+	</blockquote>
+&nbsp;<p><b>Contacts</b></p>
+	<blockquote>
+		<p>R. Wisman (<script language="javascript">
+document.write('<a href="mailto:rwisman');
+document.write('@');
+document.write('ius.edu">rwisman');
+document.write('@');
+document.write('ius.edu</a>');
+      </script>
+) for 
+		software questions.</p>
+		<p>K. Forinash (<script language="javascript">
+document.write('<a href="mailto:kforinas');
+document.write('@');
+document.write('ius.edu">kforinas');
+document.write('@');
+document.write('ius.edu</a>');
+      </script>
+) 
+		for physics or educational use questions.</p>
+		<p>&nbsp;</p>
+	</blockquote>
+	<p><b>Acknowledgements</b></p>
+	<blockquote>
+			<p>Tab bar icons by Joseph Wain 
+	@ glyphish.com.</p>
+			<p>Core-Plot for graphs, 
+			<a href="http://code.google.com/p/core-plot">http://code.google.com/p/core-plot</a>.</p>
+			<p>Clock image by 
+			<a href="http://commons.wikimedia.org/wiki/File:Crystal_Clear_app_clock.png">http://commons.wikimedia.org/wiki/File:Crystal_Clear_app_clock.png</a></p>
+			<p>Sine wave generation by Andy Buchanan, 2010, 
+			<a href="http://stackoverflow.com/questions/2067267/where-to-start-with-audio-synthesis-on-iphone">http://stackoverflow.com/questions/2067267/where-to-start-with-audio-synthesis-on-iphone</a></p>
+			<p>Expression parsing and evaluation by Graham Cox,
+			<a href="https://github.com/xslim/GCMathParser">
+			https://github.com/xslim/GCMathParser</a></p>
+			<p>Equation editor based on example by Joe Conway and Aaron 
+			Hillengrass, IOS PROGRAMMING: THE BIG NERD RANCH GUIDE (3RD EDITION)</p>
+		</blockquote>
+
+</body>
+
+</html>

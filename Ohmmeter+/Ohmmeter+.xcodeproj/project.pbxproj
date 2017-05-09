@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18630012142386DC0028F9BD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18630011142386DC0028F9BD /* QuartzCore.framework */; };
+		18630014142386EA0028F9BD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18630013142386EA0028F9BD /* MessageUI.framework */; };
+		18630018142386F40028F9BD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18630017142386F40028F9BD /* AudioToolbox.framework */; };
+		1863001C1423870B0028F9BD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1863001B1423870B0028F9BD /* AVFoundation.framework */; };
+		186300201423871E0028F9BD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1863001F1423871E0028F9BD /* CoreAudio.framework */; };
+		186300241423872D0028F9BD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186300231423872D0028F9BD /* MediaPlayer.framework */; };
+		1863009F142394C20028F9BD /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1863FEF8142384810028F9BD /* libCorePlot-CocoaTouch.a */; };
+		1863FDA8142383D10028F9BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863FD9B142383D10028F9BD /* AppDelegate.m */; };
+		1863FDA9142383D10028F9BD /* BleepMachine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1863FD9D142383D10028F9BD /* BleepMachine.mm */; };
+		1863FDAA142383D10028F9BD /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863FD9F142383D10028F9BD /* Data.m */; };
+		1863FDAC142383D10028F9BD /* PlotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863FDA3142383D10028F9BD /* PlotController.m */; };
+		1863FDAD142383D10028F9BD /* DataPlotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863FDA5142383D10028F9BD /* DataPlotController.m */; };
+		1863FDAE142383D10028F9BD /* OhmViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1863FDA7142383D10028F9BD /* OhmViewController.mm */; };
+		1863FF0A142384D40028F9BD /* 16-line-chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863FEF9142384D40028F9BD /* 16-line-chart.png */; };
+		1863FF0C142384D40028F9BD /* 63-runner.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863FEFB142384D40028F9BD /* 63-runner.png */; };
+		1863FF10142384D40028F9BD /* clock-22x22.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863FEFF142384D40028F9BD /* clock-22x22.png */; };
+		1863FF11142384D40028F9BD /* clock-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863FF00142384D40028F9BD /* clock-32x32.png */; };
+		1863FF12142384D40028F9BD /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863FF01142384D40028F9BD /* email.png */; };
+		1863FF13142384D40028F9BD /* emailInverted.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863FF02142384D40028F9BD /* emailInverted.png */; };
+		1863FF19142384D40028F9BD /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863FF08142384D40028F9BD /* start.png */; };
+		1863FF1A142384D40028F9BD /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863FF09142384D40028F9BD /* stop.png */; };
+		1863FF2B1423862C0028F9BD /* ScatterPlot.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1863FF281423862C0028F9BD /* ScatterPlot.xib */; };
+		1863FF2C1423862C0028F9BD /* SizingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1863FF291423862C0028F9BD /* SizingView.xib */; };
+		1863FF2D1423862C0028F9BD /* Ohm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1863FF2A1423862C0028F9BD /* Ohm.xib */; };
+		1863FF2F142386770028F9BD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1863FF2E142386770028F9BD /* Settings.bundle */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		791D618217A345DD00B0879D /* OhmConvertor.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 791D618117A345DD00B0879D /* OhmConvertor.sqlite */; };
+		792C78F217A2B04C00E6CD83 /* Pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 792C78F117A2B04C00E6CD83 /* Pencil.png */; };
+		79530F43179E171600E47338 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79530F42179E171500E47338 /* CoreData.framework */; };
+		795AEBA716E806AB00414669 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AEBA516E806AB00414669 /* InfoViewController.m */; };
+		795AEBA816E806AB00414669 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795AEBA616E806AB00414669 /* InfoViewController.xib */; };
+		795AEBAC16E841DC00414669 /* circuit.png in Resources */ = {isa = PBXBuildFile; fileRef = 795AEBAB16E841DC00414669 /* circuit.png */; };
+		79A4D36616F022850026034C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A4D36516F022850026034C /* Default@2x.png */; };
+		79A4D36816F022B90026034C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A4D36716F022B90026034C /* Default-568h@2x.png */; };
+		79A4D36A16F022FB0026034C /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A4D36916F022FB0026034C /* Default-Portrait@2x~ipad.png */; };
+		79A4D37216F026970026034C /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A4D37116F026970026034C /* Default-Landscape@2x~ipad.png */; };
+		79A4D37416F026A50026034C /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A4D37316F026A50026034C /* Default-Landscape~ipad.png */; };
+		79A4D37616F0CC3C0026034C /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A4D37516F0CC3C0026034C /* 57x57.png */; };
+		79A4D37816F0CCB40026034C /* 72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A4D37716F0CCB40026034C /* 72x72.png */; };
+		79A4D37C16F0CDD80026034C /* 144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A4D37B16F0CDD80026034C /* 144x144.png */; };
+		79A4D37E16F0D0620026034C /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A4D37D16F0D0620026034C /* 114x114.png */; };
+		79B5648817A4392000B7C2B7 /* 512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B5648717A4392000B7C2B7 /* 512x512.png */; };
+		79B5649A17A6750A00B7C2B7 /* 1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B5649917A6750A00B7C2B7 /* 1024x1024.png */; };
+		79BFB54516EEDB3700F13A61 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 79BFB54416EEDB3700F13A61 /* Default-Portrait.png */; };
+		79BFB54716EEDCF300F13A61 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 79BFB54616EEDCF300F13A61 /* Default.png */; };
+		79C839B517A8B51500F9BE3F /* InfoEquationEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C839B417A8B51500F9BE3F /* InfoEquationEditorViewController.xib */; };
+		79CF1C96179D84250072EE12 /* libEquationEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF1C62179D7EBD0072EE12 /* libEquationEditor.a */; };
+		79D536D61786614700DAFBA3 /* GCMathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D536D51786614700DAFBA3 /* GCMathParser.m */; };
+		79D536DB1786615200DAFBA3 /* ZExpParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 79D536DA1786615200DAFBA3 /* ZExpParser.mm */; };
+		79FD754217A21C66001BDA14 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79FD754017A21C66001BDA14 /* Model.xcdatamodeld */; };
+		79FD754417A21D61001BDA14 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79FD754317A21D61001BDA14 /* DetailViewController.xib */; };
+		79FD754617A21D72001BDA14 /* OhmConvertorItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79FD754517A21D72001BDA14 /* OhmConvertorItemCell.xib */; };
+		79FD754917A21EAA001BDA14 /* radio_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FD754717A21EAA001BDA14 /* radio_checked.png */; };
+		79FD754A17A21EAA001BDA14 /* radio_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FD754817A21EAA001BDA14 /* radio_unchecked.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18630074142394670028F9BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1863FEEE142384810028F9BD /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9B83460FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		1863FEF7142384810028F9BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1863FEEE142384810028F9BD /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		79CF1C61179D7EBD0072EE12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79CF1C5B179D7EBD0072EE12 /* EquationEditor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 79CF1C4A179D7EBD0072EE12;
+			remoteInfo = EquationEditor;
+		};
+		79CF1C94179D83C90072EE12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79CF1C5B179D7EBD0072EE12 /* EquationEditor.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 79CF1C49179D7EBD0072EE12;
+			remoteInfo = EquationEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18630011142386DC0028F9BD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18630013142386EA0028F9BD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		18630017142386F40028F9BD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1863001B1423870B0028F9BD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1863001F1423871E0028F9BD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		186300231423872D0028F9BD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1863FD9A142383D10028F9BD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1863FD9B142383D10028F9BD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1863FD9C142383D10028F9BD /* BleepMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleepMachine.h; sourceTree = "<group>"; };
+		1863FD9D142383D10028F9BD /* BleepMachine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BleepMachine.mm; sourceTree = "<group>"; };
+		1863FD9E142383D10028F9BD /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		1863FD9F142383D10028F9BD /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		1863FDA2142383D10028F9BD /* PlotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotController.h; sourceTree = "<group>"; };
+		1863FDA3142383D10028F9BD /* PlotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotController.m; sourceTree = "<group>"; };
+		1863FDA4142383D10028F9BD /* DataPlotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPlotController.h; sourceTree = "<group>"; };
+		1863FDA5142383D10028F9BD /* DataPlotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataPlotController.m; sourceTree = "<group>"; };
+		1863FDA6142383D10028F9BD /* OhmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OhmViewController.h; sourceTree = "<group>"; };
+		1863FDA7142383D10028F9BD /* OhmViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OhmViewController.mm; sourceTree = "<group>"; };
+		1863FEEE142384810028F9BD /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "core-plot/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		1863FEF9142384D40028F9BD /* 16-line-chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "16-line-chart.png"; path = "GlyphishIcons/16-line-chart.png"; sourceTree = "<group>"; };
+		1863FEFB142384D40028F9BD /* 63-runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "63-runner.png"; path = "GlyphishIcons/63-runner.png"; sourceTree = "<group>"; };
+		1863FEFF142384D40028F9BD /* clock-22x22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clock-22x22.png"; path = "GlyphishIcons/clock-22x22.png"; sourceTree = "<group>"; };
+		1863FF00142384D40028F9BD /* clock-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "clock-32x32.png"; path = "GlyphishIcons/clock-32x32.png"; sourceTree = "<group>"; };
+		1863FF01142384D40028F9BD /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = email.png; path = GlyphishIcons/email.png; sourceTree = "<group>"; };
+		1863FF02142384D40028F9BD /* emailInverted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emailInverted.png; path = GlyphishIcons/emailInverted.png; sourceTree = "<group>"; };
+		1863FF08142384D40028F9BD /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start.png; path = GlyphishIcons/start.png; sourceTree = "<group>"; };
+		1863FF09142384D40028F9BD /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop.png; path = GlyphishIcons/stop.png; sourceTree = "<group>"; };
+		1863FF281423862C0028F9BD /* ScatterPlot.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScatterPlot.xib; sourceTree = "<group>"; };
+		1863FF291423862C0028F9BD /* SizingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizingView.xib; sourceTree = "<group>"; };
+		1863FF2A1423862C0028F9BD /* Ohm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ohm.xib; sourceTree = "<group>"; };
+		1863FF2E142386770028F9BD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* Ohmmeter+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ohmmeter+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Ohmmeter+_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ohmmeter+_Prefix.pch"; sourceTree = "<group>"; };
+		791D618117A345DD00B0879D /* OhmConvertor.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = OhmConvertor.sqlite; sourceTree = "<group>"; };
+		792C78F117A2B04C00E6CD83 /* Pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pencil.png; path = GlyphishIcons/Pencil.png; sourceTree = "<group>"; };
+		79530F42179E171500E47338 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		795AEBA516E806AB00414669 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		795AEBA616E806AB00414669 /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoViewController.xib; path = Classes/InfoViewController.xib; sourceTree = "<group>"; };
+		795AEBAB16E841DC00414669 /* circuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circuit.png; path = GlyphishIcons/circuit.png; sourceTree = "<group>"; };
+		79A15E9C17A8C05B002F68A6 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		79A4D36516F022850026034C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		79A4D36716F022B90026034C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		79A4D36916F022FB0026034C /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		79A4D37116F026970026034C /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		79A4D37316F026A50026034C /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		79A4D37516F0CC3C0026034C /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		79A4D37716F0CCB40026034C /* 72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72x72.png; sourceTree = "<group>"; };
+		79A4D37B16F0CDD80026034C /* 144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144x144.png; sourceTree = "<group>"; };
+		79A4D37D16F0D0620026034C /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
+		79B5648717A4392000B7C2B7 /* 512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 512x512.png; sourceTree = "<group>"; };
+		79B5649917A6750A00B7C2B7 /* 1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024x1024.png; sourceTree = "<group>"; };
+		79BFB54416EEDB3700F13A61 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		79BFB54616EEDCF300F13A61 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		79C839B417A8B51500F9BE3F /* InfoEquationEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoEquationEditorViewController.xib; path = Classes/InfoEquationEditorViewController.xib; sourceTree = "<group>"; };
+		79CF1C5B179D7EBD0072EE12 /* EquationEditor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EquationEditor.xcodeproj; path = EquationEditor/EquationEditor.xcodeproj; sourceTree = "<group>"; };
+		79D536D41786614700DAFBA3 /* GCMathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMathParser.h; sourceTree = "<group>"; };
+		79D536D51786614700DAFBA3 /* GCMathParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMathParser.m; sourceTree = "<group>"; };
+		79D536D91786615200DAFBA3 /* ZExpParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZExpParser.h; sourceTree = "<group>"; };
+		79D536DA1786615200DAFBA3 /* ZExpParser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZExpParser.mm; sourceTree = "<group>"; };
+		79FD754117A21C66001BDA14 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		79FD754317A21D61001BDA14 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailViewController.xib; path = EquationEditor/EquationEditor/DetailViewController.xib; sourceTree = "<group>"; };
+		79FD754517A21D72001BDA14 /* OhmConvertorItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OhmConvertorItemCell.xib; path = EquationEditor/EquationEditor/OhmConvertorItemCell.xib; sourceTree = "<group>"; };
+		79FD754717A21EAA001BDA14 /* radio_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = radio_checked.png; path = EquationEditor/EquationEditor/radio_checked.png; sourceTree = "<group>"; };
+		79FD754817A21EAA001BDA14 /* radio_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = radio_unchecked.png; path = EquationEditor/EquationEditor/radio_unchecked.png; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Ohmmeter+-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Ohmmeter+-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79530F43179E171600E47338 /* CoreData.framework in Frameworks */,
+				79CF1C96179D84250072EE12 /* libEquationEditor.a in Frameworks */,
+				1863009F142394C20028F9BD /* libCorePlot-CocoaTouch.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				18630012142386DC0028F9BD /* QuartzCore.framework in Frameworks */,
+				18630014142386EA0028F9BD /* MessageUI.framework in Frameworks */,
+				18630018142386F40028F9BD /* AudioToolbox.framework in Frameworks */,
+				1863001C1423870B0028F9BD /* AVFoundation.framework in Frameworks */,
+				186300201423871E0028F9BD /* CoreAudio.framework in Frameworks */,
+				186300241423872D0028F9BD /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79A15E9C17A8C05B002F68A6 /* InfoViewController.h */,
+				79D536D91786615200DAFBA3 /* ZExpParser.h */,
+				79D536DA1786615200DAFBA3 /* ZExpParser.mm */,
+				79D536D41786614700DAFBA3 /* GCMathParser.h */,
+				79D536D51786614700DAFBA3 /* GCMathParser.m */,
+				1863FD9A142383D10028F9BD /* AppDelegate.h */,
+				1863FD9B142383D10028F9BD /* AppDelegate.m */,
+				1863FD9C142383D10028F9BD /* BleepMachine.h */,
+				1863FD9D142383D10028F9BD /* BleepMachine.mm */,
+				1863FD9E142383D10028F9BD /* Data.h */,
+				1863FD9F142383D10028F9BD /* Data.m */,
+				1863FDA2142383D10028F9BD /* PlotController.h */,
+				1863FDA3142383D10028F9BD /* PlotController.m */,
+				1863FDA4142383D10028F9BD /* DataPlotController.h */,
+				1863FDA5142383D10028F9BD /* DataPlotController.m */,
+				1863FDA6142383D10028F9BD /* OhmViewController.h */,
+				1863FDA7142383D10028F9BD /* OhmViewController.mm */,
+				795AEBA516E806AB00414669 /* InfoViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1863FEEF142384810028F9BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1863FEF8142384810028F9BD /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Ohmmeter+.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				79CF1C5B179D7EBD0072EE12 /* EquationEditor.xcodeproj */,
+				1863FEEE142384810028F9BD /* CorePlot-CocoaTouch.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Ohmmeter+_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79C839B417A8B51500F9BE3F /* InfoEquationEditorViewController.xib */,
+				79B5649917A6750A00B7C2B7 /* 1024x1024.png */,
+				79B5648717A4392000B7C2B7 /* 512x512.png */,
+				791D618117A345DD00B0879D /* OhmConvertor.sqlite */,
+				792C78F117A2B04C00E6CD83 /* Pencil.png */,
+				79FD754717A21EAA001BDA14 /* radio_checked.png */,
+				79FD754817A21EAA001BDA14 /* radio_unchecked.png */,
+				79FD754517A21D72001BDA14 /* OhmConvertorItemCell.xib */,
+				79FD754317A21D61001BDA14 /* DetailViewController.xib */,
+				79A4D37D16F0D0620026034C /* 114x114.png */,
+				79A4D37716F0CCB40026034C /* 72x72.png */,
+				79A4D37516F0CC3C0026034C /* 57x57.png */,
+				79A4D37B16F0CDD80026034C /* 144x144.png */,
+				79A4D37316F026A50026034C /* Default-Landscape~ipad.png */,
+				79A4D37116F026970026034C /* Default-Landscape@2x~ipad.png */,
+				79A4D36916F022FB0026034C /* Default-Portrait@2x~ipad.png */,
+				79A4D36716F022B90026034C /* Default-568h@2x.png */,
+				79A4D36516F022850026034C /* Default@2x.png */,
+				79BFB54616EEDCF300F13A61 /* Default.png */,
+				79BFB54416EEDB3700F13A61 /* Default-Portrait.png */,
+				795AEBAB16E841DC00414669 /* circuit.png */,
+				795AEBA616E806AB00414669 /* InfoViewController.xib */,
+				1863FF2E142386770028F9BD /* Settings.bundle */,
+				1863FF281423862C0028F9BD /* ScatterPlot.xib */,
+				1863FF291423862C0028F9BD /* SizingView.xib */,
+				1863FF2A1423862C0028F9BD /* Ohm.xib */,
+				1863FEF9142384D40028F9BD /* 16-line-chart.png */,
+				1863FEFB142384D40028F9BD /* 63-runner.png */,
+				1863FEFF142384D40028F9BD /* clock-22x22.png */,
+				1863FF00142384D40028F9BD /* clock-32x32.png */,
+				1863FF01142384D40028F9BD /* email.png */,
+				1863FF02142384D40028F9BD /* emailInverted.png */,
+				1863FF08142384D40028F9BD /* start.png */,
+				1863FF09142384D40028F9BD /* stop.png */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Ohmmeter+-Info.plist */,
+				79FD754017A21C66001BDA14 /* Model.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79530F42179E171500E47338 /* CoreData.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				18630011142386DC0028F9BD /* QuartzCore.framework */,
+				18630013142386EA0028F9BD /* MessageUI.framework */,
+				18630017142386F40028F9BD /* AudioToolbox.framework */,
+				1863001B1423870B0028F9BD /* AVFoundation.framework */,
+				1863001F1423871E0028F9BD /* CoreAudio.framework */,
+				186300231423872D0028F9BD /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79CF1C5C179D7EBD0072EE12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79CF1C62179D7EBD0072EE12 /* libEquationEditor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Ohmmeter+ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Ohmmeter+" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79CF1C95179D83C90072EE12 /* PBXTargetDependency */,
+				18630075142394670028F9BD /* PBXTargetDependency */,
+			);
+			name = "Ohmmeter+";
+			productName = Temperature;
+			productReference = 1D6058910D05DD3D006BFB54 /* Ohmmeter+.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Ohmmeter+" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				es,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1863FEEF142384810028F9BD /* Products */;
+					ProjectRef = 1863FEEE142384810028F9BD /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+				{
+					ProductGroup = 79CF1C5C179D7EBD0072EE12 /* Products */;
+					ProjectRef = 79CF1C5B179D7EBD0072EE12 /* EquationEditor.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Ohmmeter+ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1863FEF8142384810028F9BD /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = 1863FEF7142384810028F9BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79CF1C62179D7EBD0072EE12 /* libEquationEditor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEquationEditor.a;
+			remoteRef = 79CF1C61179D7EBD0072EE12 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				1863FF0A142384D40028F9BD /* 16-line-chart.png in Resources */,
+				1863FF0C142384D40028F9BD /* 63-runner.png in Resources */,
+				1863FF10142384D40028F9BD /* clock-22x22.png in Resources */,
+				1863FF11142384D40028F9BD /* clock-32x32.png in Resources */,
+				1863FF12142384D40028F9BD /* email.png in Resources */,
+				1863FF13142384D40028F9BD /* emailInverted.png in Resources */,
+				1863FF19142384D40028F9BD /* start.png in Resources */,
+				1863FF1A142384D40028F9BD /* stop.png in Resources */,
+				1863FF2B1423862C0028F9BD /* ScatterPlot.xib in Resources */,
+				1863FF2C1423862C0028F9BD /* SizingView.xib in Resources */,
+				1863FF2D1423862C0028F9BD /* Ohm.xib in Resources */,
+				1863FF2F142386770028F9BD /* Settings.bundle in Resources */,
+				795AEBA816E806AB00414669 /* InfoViewController.xib in Resources */,
+				795AEBAC16E841DC00414669 /* circuit.png in Resources */,
+				79BFB54516EEDB3700F13A61 /* Default-Portrait.png in Resources */,
+				79BFB54716EEDCF300F13A61 /* Default.png in Resources */,
+				79A4D36616F022850026034C /* Default@2x.png in Resources */,
+				79A4D36816F022B90026034C /* Default-568h@2x.png in Resources */,
+				79A4D36A16F022FB0026034C /* Default-Portrait@2x~ipad.png in Resources */,
+				79A4D37216F026970026034C /* Default-Landscape@2x~ipad.png in Resources */,
+				79A4D37416F026A50026034C /* Default-Landscape~ipad.png in Resources */,
+				79A4D37616F0CC3C0026034C /* 57x57.png in Resources */,
+				79A4D37816F0CCB40026034C /* 72x72.png in Resources */,
+				79A4D37C16F0CDD80026034C /* 144x144.png in Resources */,
+				79A4D37E16F0D0620026034C /* 114x114.png in Resources */,
+				79FD754417A21D61001BDA14 /* DetailViewController.xib in Resources */,
+				79FD754617A21D72001BDA14 /* OhmConvertorItemCell.xib in Resources */,
+				79FD754917A21EAA001BDA14 /* radio_checked.png in Resources */,
+				79FD754A17A21EAA001BDA14 /* radio_unchecked.png in Resources */,
+				792C78F217A2B04C00E6CD83 /* Pencil.png in Resources */,
+				791D618217A345DD00B0879D /* OhmConvertor.sqlite in Resources */,
+				79B5648817A4392000B7C2B7 /* 512x512.png in Resources */,
+				79B5649A17A6750A00B7C2B7 /* 1024x1024.png in Resources */,
+				79C839B517A8B51500F9BE3F /* InfoEquationEditorViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1863FDA8142383D10028F9BD /* AppDelegate.m in Sources */,
+				1863FDA9142383D10028F9BD /* BleepMachine.mm in Sources */,
+				1863FDAA142383D10028F9BD /* Data.m in Sources */,
+				1863FDAC142383D10028F9BD /* PlotController.m in Sources */,
+				1863FDAD142383D10028F9BD /* DataPlotController.m in Sources */,
+				1863FDAE142383D10028F9BD /* OhmViewController.mm in Sources */,
+				795AEBA716E806AB00414669 /* InfoViewController.m in Sources */,
+				79D536D61786614700DAFBA3 /* GCMathParser.m in Sources */,
+				79D536DB1786615200DAFBA3 /* ZExpParser.mm in Sources */,
+				79FD754217A21C66001BDA14 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18630075142394670028F9BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = 18630074142394670028F9BD /* PBXContainerItemProxy */;
+		};
+		79CF1C95179D83C90072EE12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EquationEditor;
+			targetProxy = 79CF1C94179D83C90072EE12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		187DA23214241CC200D31597 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ohm_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/core-plot/framework\"/**",
+					"\"${PROJECT_DIR}/EquationEditor\"/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = Ohmmeter;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		187DA23314241CC200D31597 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ohmmeter+_Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Ohmmeter+-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Ohmmeter+";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SKIP_INSTALL = NO;
+				SYMROOT = "${SYMROOT}";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ohmmeter+_Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Ohmmeter+-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Ohmmeter+";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = NO;
+				SYMROOT = "${SYMROOT}";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ohmmeter+_Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Ohmmeter+-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Ohmmeter+";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = NO;
+				SYMROOT = "${SYMROOT}";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		795079F816F3F0E0005D032F /* Archive */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ohm_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/core-plot/framework\"/**",
+					"\"${PROJECT_DIR}/EquationEditor\"/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = Ohmmeter;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Archive;
+		};
+		795079F916F3F0E0005D032F /* Archive */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ohmmeter+_Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Ohmmeter+-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Ohmmeter+";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = NO;
+				SYMROOT = "${SYMROOT}";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Archive;
+		};
+		79C550D916C41BA900E8287E /* Ad-Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ohm_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/core-plot/framework\"/**",
+					"\"${PROJECT_DIR}/EquationEditor\"/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad-Hoc";
+		};
+		79C550DA16C41BA900E8287E /* Ad-Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ohmmeter+_Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Ohmmeter+-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Ohmmeter+";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = NO;
+				SYMROOT = "${SYMROOT}";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad-Hoc";
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ohm_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/core-plot/framework\"/**",
+					"\"${PROJECT_DIR}/EquationEditor\"/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = Ohmmeter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ohm_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/core-plot/framework\"/**",
+					"\"${PROJECT_DIR}/EquationEditor\"/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Ohmmeter+" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				187DA23314241CC200D31597 /* Distribution */,
+				79C550DA16C41BA900E8287E /* Ad-Hoc */,
+				795079F916F3F0E0005D032F /* Archive */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Ohmmeter+" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				187DA23214241CC200D31597 /* Distribution */,
+				79C550D916C41BA900E8287E /* Ad-Hoc */,
+				795079F816F3F0E0005D032F /* Archive */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79FD754017A21C66001BDA14 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79FD754117A21C66001BDA14 /* Model.xcdatamodel */,
+			);
+			currentVersion = 79FD754117A21C66001BDA14 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

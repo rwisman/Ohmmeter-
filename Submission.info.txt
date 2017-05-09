@@ -1,0 +1,35 @@
+Version number:		1.0
+Copyright:
+Primary category:	Education
+____________________________________
+Rating:			None in all
+____________________________________
+Entering Metadata		
+Description:		
+
+Ohmmeter+ measures resistance, Ω, of a simple circuit connected through the headset port and converts to another unit by a user defined function, f(Ω). For example, Ω can be converted to Celsius by the Steinhart-Hart equation for a 10K thermistor:
+
+0.001125308852122+0.000234711863267*ln(R)+0.000000085663516*ln(R)^3)^-1-273.15 
+
+The application is useful for measuring resistance and other units that change over time.
+The application displays, records, graphs and emails spreadsheet data of simultaneous Ω and f(Ω) measurements.
+
+Keywords:		science education, resistance, ohms, data collection, mobile science
+Support URL:		http://www.ius.edu/rwisman/Ohmmeter+
+Marketing URL:		http://www.ius.edu/rwisman/Ohmmeter+
+______________________________________
+App Review Information
+Contact information
+	First name	Raymond 
+	Last name	Wisman
+	Email address	rwisman@ius.edu
+	Phone number	1-812-941-2465
+_______________________________________
+Uploading Icons, Screenshots, and Routing App Files for Your App
+
+John - Ohmmeter/GlyphishIcons holds the icon and screenshot files named:
+	Large App Icon				1024x1024.png
+	iPhone and iPod touch Screenshots	640x960.png
+	iPhone 5 and iPad touch			640x1136.png
+	iPad Screenshots			1536x2048.png
+
